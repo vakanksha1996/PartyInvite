@@ -1,0 +1,21 @@
+﻿@model PartyInvites.Models.guest
+
+@{
+    ViewBag.Title = "thanks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thank you @Model.firstname! </h2>
+
+@if (Model.will_attend == true)
+{
+    <p>Its great that you are coming .The drinks are already in fridge.</p>
+
+}
+else
+{
+    <p>sorry to hear that you can't make it, but thanks for letting us know.</p>
+
+
+
+}
